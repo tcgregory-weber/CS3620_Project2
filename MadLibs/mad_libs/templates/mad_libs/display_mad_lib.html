@@ -1,0 +1,7 @@
+{% extends "mad_libs/base.html" %}
+{% block title %}Mad Libs{% endblock %}
+{% block body %}
+<h1>Mad Libs</h1>
+<p>{{ madlib }}</p>
+<a href="{% url 'mad_libs:index' %}" class="btn btn-primary">New Story!</a>
+{% endblock %}
